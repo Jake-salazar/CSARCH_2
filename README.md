@@ -1,8 +1,7 @@
-# Express + Handlebars Example
-This small example shows how to use express with handlebars through the package [express-handlebars](https://www.npmjs.com/package/express-handlebars).
+# Machine Project in CSARCH2
 
 ### Set up
-1. Navigate to the folder `cd express-hbs`.
+1. Navigate to the folder `CSARCH_MP`.
 2. In `cmd` or Terminal, run `npm install`. (This step will install the dependencies specified in the package.json)
 3. Run `node index.js`
 4. Open [http://localhost:9090]() in a browser to see it running.
