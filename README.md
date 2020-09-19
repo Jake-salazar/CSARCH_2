@@ -6,5 +6,4 @@
 3. Run `node index.js`
 4. Open [http://localhost:9090]() in a browser to see it running.
 
-### Reviewing
-To understand how to make your own express + handlebars application, read through the comments in each file.
+### 
