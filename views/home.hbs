@@ -1,0 +1,32 @@
+<div id="content">
+
+
+<div class="margin10 center">
+    <h1>CSARCH2 PROJECT - Hexadecimal to Decimal Converter</h1>
+</div>
+
+{{>messages}}
+
+<div class="container">
+
+  <form action="/Calculate" method="POST" >
+
+    <label for="fname">Input Hex</label>
+    <input type="text" id="fname" name="data"    placeholder="{{input}}" > <br> <br>
+    
+    <label for="lname">Unsigned Decimal</label>
+    <input type="text" id="lname" name="Unsigned"  placeholder="{{unsignedDec}}"> <br> <br>
+    
+    <label for="lname">Signed Decimal</label>
+    <input type="text" id="lname" name="Signed" placeholder="{{signedDec}}">
+
+    <button type="submit" value="submit"> Calculate </button>
+
+  </form>
+</div>
+
+
+
+
+</div>
+
