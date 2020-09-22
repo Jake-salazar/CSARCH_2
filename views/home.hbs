@@ -6,25 +6,25 @@
 </div>
 
 {{>messages}}
-
+<center>
 <div class="container">
 
-  <form action="/Calculate" method="POST" >
+  <form action="/Calculate" method="POST">
 
     <label for="fname">Input Hex</label>
     <input type="text" id="fname" name="data"    placeholder="{{input}}" > <br> <br>
     
     <label for="lname">Unsigned Decimal</label>
-    <input type="text" id="lname" name="Unsigned"  placeholder="{{unsignedDec}}"> <br> <br>
+    <input type="text" id="lname" name="Unsigned"  placeholder="{{unsignedDec}}" disabled> <br> <br>
     
     <label for="lname">Signed Decimal</label>
-    <input type="text" id="lname" name="Signed" placeholder="{{signedDec}}">
+    <input type="text" id="lname" name="Signed" placeholder="{{signedDec}}" disabled><br><br>
 
     <button type="submit" value="submit"> Calculate </button>
 
   </form>
 </div>
-
+</center>
 
 
 
