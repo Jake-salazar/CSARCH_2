@@ -97,10 +97,10 @@ let data = ConvertBase.hex2bin(hexData);
 
 
 function uintToInt(uint, nbit) {
-  nbit = +nbit || 64;
-  if (nbit > 64) throw new RangeError('uintToInt only supports ints up to 64 bits');
-  uint <<= 64 - nbit;
-  uint >>= 64 - nbit;
+  nbit = +nbit || 129;
+  if (nbit > 129) throw new RangeError('uintToInt only supports ints up to 128 bits');
+  uint <<= 129 - nbit;
+  uint >>= 129 - nbit;
   return uint;
 };
 
