@@ -2,7 +2,6 @@
   box-sizing: border-box;
   font-family: Cambria, monospace;
   font-weight: normal;
-  color: white;
 }
 
 
@@ -16,11 +15,16 @@ body {
   
 }
 
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  border:  #854798;
+}
 .container
 {
 width: 300px;
-height: 400px;
+height: 450px;
 padding: 20px;
+display: flex;
 top: 50%;
 left: 50%;
 justify-content: center;
@@ -29,13 +33,11 @@ background-color: #011627;
 border-radius: 5px;
 border-style: solid;
 border-color: #98D2EB;
-}
 
-.error
-{
-  font-size: large;
 }
-
+.container:hover{
+  box-shadow: 0 0 30px#98D2EB;
+}
 
 
 
@@ -55,30 +57,53 @@ input[type=text], select, textarea {
 input[type=text]:focus, select, textarea {
 width: 250px;
 border-color: #854798;
+box-shadow: 0 0 15px #854798;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: black;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
+input[type=submit]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 2px solid #98D2EB;
+  padding: 14px 10px;
+  outline: none;
+  color: #98D2EB;
+  border-radius: 24px;
+  transition: 0.25s;
   cursor: pointer;
+  font-family: Gotham Rounded, monospace;
 }
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
+input[type=submit]:hover{
+  border: 2px solid#98D2EB;
+  background: #98D2EB;
+  color: #011627;
+  font-weight: bold;
+  }
 
 .margin10 { margin:10px 0; }
 .center { text-align:center; }
 h1
 {
-  color: #854798;
-  font-family: Gotham Rounded, monospace;
+  color: #011627;
+  font-family: Helvetica;
   font-weight: bolder;
+  display: inline;
+  position: relative;
+  letter-spacing: -2px;
+  text-shadow: -1px -1px 0px #98D2EB, 1px 1px 0px #98D2EB;
+}
+
+
+
+h5
+{
+  color: red;
+  font-family: Helvetica, monospace;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 label
