@@ -4,20 +4,29 @@
   "description": "This small example shows how to use express with handlebars through the package [express-handlebars](https://www.npmjs.com/package/express-handlebars).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "debug": "nodemon -r dotenv/config index.js",
+    "dev": "node -r dotenv/config index.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines":{"node":"6.x"},
   "dependencies": {
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.5",
+    "debug": "^4.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "express-session": "^1.17.1",
     "flash": "^1.1.0",
     "handlebars": "^4.7.3",
-    "session": "^0.1.0"
+    "session": "^0.1.0",
+    "start": "^5.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
   }
 }
