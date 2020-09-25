@@ -7,12 +7,10 @@ const handlebars = require('handlebars');
 const app = express();
 const session = require('express-session');
 
-const {envPort,sessionKey} = require('./config');
-
 const flash = require('connect-flash');
 
 app.use(session({
-  secret: sessionKey,
+  secret: 'secret',
   resave: false,
   saveUninitialized: true,
 }));
@@ -140,7 +138,7 @@ else if (data[0] === '0'){
 
 
 
-const port = envPort || 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on port: ${port}...`) );
 
 
